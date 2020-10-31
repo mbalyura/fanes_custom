@@ -21,7 +21,7 @@ body .tooltip-inner {
     }
 }
 .wrapper {
-    max-width: 1540px;
+    /* max-width: 1540px; */
     padding: 0;
     margin: 0 auto;
     color: #424242;
@@ -4002,4 +4002,10 @@ footer .foot-wrapp .col-footer ul a:hover {
 .powered-block .powered a {
     color: #4caf50;
     font-style: normal;
+}
+
+/* customization start here */
+
+.menu-wrapper {
+  background-color: #424242;
 }
