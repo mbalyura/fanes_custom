@@ -1842,14 +1842,14 @@ header {
     padding: 0;
     margin: 0;
     flex-grow: 1;
-    flex-basis: 50%;
+    flex-basis: 25%;
 }
 @media (max-width: 834px) {
     #product-category .category-block ul li,
     #product-compare .category-block ul li,
     #product-search .category-block ul li,
     #product-manufacturer .category-block ul li {
-        flex-basis: 100%;
+        flex-basis: 33%;
     }
 }
 #product-category .category-block ul a,
@@ -1857,7 +1857,7 @@ header {
 #product-search .category-block ul a,
 #product-manufacturer .category-block ul a {
     display: block;
-    padding: 50px;
+    padding: 10px;
     text-align: center;
     border: 1px solid var(--light-secondary);
     color: var(--dark-third);
