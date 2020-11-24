@@ -1,40 +1,50 @@
 <footer>
-    <div class="footer-block">
+    <div class="footer-block row">
+
+      <div class="col-footer vk col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h5>Наша группа</h5>
+        <!-- VK Widget -->
+        <div id="vk-group"></div>
+      </div>
+
       {% if informations %}
-      <div class="col-footer">
+      <div class="col-footer info col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h5>{{ text_information }}</h5>
         <ul class="list-unstyled">
          {% for information in informations %}
           <li><a href="{{ information.href }}">{{ information.title }}</a></li>
           {% endfor %}
+        <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+        <li><a href="{{ contact }}">{{ text_contact }}</a></li>
         </ul>
       </div>
       {% endif %}
-      <div class="col-footer">
-        <h5>{{ text_service }}</h5>
+
+      <div class="col-footer contacts col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h5>Контакты</h5>
         <ul class="list-unstyled">
-          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
-          <li><a href="{{ return }}">{{ text_return }}</a></li>
-          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+          <li><span class="adress"><i class="fa fa-map-marker" aria-hidden="true"></i>г.Симферополь, ул.Карла Маркса, 40</span></li>
+          <li><span class="tel"><i class="fa fa-phone" aria-hidden="true"></i>+7 978 764 74 40</span></li>
+          <li><span class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>baionnette.shop@gmail.com</span></li>
         </ul>
+        <div class="money-block">
+            <img src="catalog/view/theme/fanes/image/icons_money/mir.png" alt="mir">
+            <img src="catalog/view/theme/fanes/image/icons_money/mastercard.png" alt="card-mastercard">
+            <img src="catalog/view/theme/fanes/image/icons_money/visa.png" alt="card-visa">
+        </div>
       </div>
-      <div class="col-footer">
-        <h5>{{ text_extra }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
-          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
-          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
-          <li><a href="{{ special }}">{{ text_special }}</a></li>
-        </ul>
-      </div>
-      <div class="col-footer">
-        <h5>{{ text_account }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ account }}">{{ text_account }}</a></li>
-          <li><a href="{{ order }}">{{ text_order }}</a></li>
-          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
-          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
-        </ul>
+
+      <div class="col-footer working-time col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h5>График работы:</h5>
+            <ul class="list-unstyled">
+               <li>пн 9:00 - 19:00</li>
+               <li>вт 9:00 - 19:00</li>
+               <li>ср 9:00 - 19:00</li>
+               <li>чт 9:00 - 19:00</li>
+               <li>пт 9:00 - 19:00</li>
+               <li>сб 9:00 - 17:00</li>
+               <li>вс 9:00 - 17:00</li>
+            </ul>
       </div>
     </div>
 </footer>
@@ -42,24 +52,19 @@
      <div class="powered">
          {{ powered }}
      </div>
-     <div class="money-block">
-            <img src="catalog/view/theme/fanes/image/icons_money/mastercard.png" alt="card-mastercard">
-            <img src="catalog/view/theme/fanes/image/icons_money/visa.png" alt="card-visa">
-            <img src="catalog/view/theme/fanes/image/icons_money/webmoney.png" alt="webmoney">
-            <img src="catalog/view/theme/fanes/image/icons_money/qiwi.png" alt="qiwi">
-            <img src="catalog/view/theme/fanes/image/icons_money/yandex-money.png" alt="yandex-money">
-     </div>
-</div>
-</div>
 
-<!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
+</div>
+</div>
 
 <script src="catalog/view/theme/fanes/javascript/common.min.js" type="text/javascript"></script>
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="catalog/view/theme/fanes/javascript/click.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+VK.Widgets.Group("vk-group", {mode: 3, no_cover: 1, width: "250", height: "200", color1: '222', color2: 'EEE', color3: '689BF9'}, 50244899);
+</script>
+
 {% for script in scripts %}
 <script src="{{ script }}" type="text/javascript"></script>
 {% endfor %}

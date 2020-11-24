@@ -3955,29 +3955,31 @@ footer {
     margin: 0;
 }
 footer .footer-block {
-    padding: 40px;
-    display: flex;
+    padding: 30px;
+    /* display: flex;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
+    display: -webkit-flex; */
     /* padding: 0;
     margin: 0; */
 }
 @media (max-width: 834px) {
     footer .footer-block {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 }
 footer .footer-block .col-footer {
-    flex-basis: 25%;
+    /* flex-basis: 25%; */
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     margin: 0;
+ 	height: 100%;
 }
 @media (max-width: 834px) {
     footer .footer-block .col-footer {
-        flex-basis: 100%;
+        /* flex-basis: 100%; */
+        padding: 10px 0;
     }
 }
 footer .footer-block .col-footer h5 {
@@ -4023,7 +4025,7 @@ footer .footer-block .col-footer ul a:hover {
 .powered-block {
     background: var(--dark-main);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     margin: 0;
@@ -4054,4 +4056,61 @@ footer .footer-block .col-footer ul a:hover {
     padding: 0;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+footer .footer-block .vk #vk-group{
+    margin: auto;
+    padding-top: 5px;
+}
+
+footer .footer-block .info .list-unstyled {
+    padding-top: 8px;
+}
+
+footer .footer-block .contacts .list-unstyled {
+    padding-top: 17px;
+}
+
+.footer-block .contacts .list-unstyled .adress,
+.footer-block .contacts .list-unstyled .email,
+.footer-block .contacts .list-unstyled .tel {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light-secondary);
+}
+
+.footer-block .contacts .list-unstyled .adress i,
+.footer-block .contacts .list-unstyled .email i,
+.footer-block .contacts .list-unstyled .tel i {
+    display: inline-block;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.footer-block .col-footer .money-block {
+    padding-top: 30px;
+}
+
+footer .footer-block .working-time .list-unstyled {
+    padding-top: 10px;
+}
+
+footer .footer-block .working-time .list-unstyled :first-child {
+    padding-top: 16px;
+}
+
+footer .footer-block .working-time .list-unstyled :last-child {
+    padding-bottom: 16px;
+}
+
+footer .footer-block .working-time ul li {
+	display: block;
+    color: var(--light-secondary);
+    background-color: var(--dark-main);
+    padding: 5px;
+    margin: 0 15%;
+    text-transform: uppercase;
 }
