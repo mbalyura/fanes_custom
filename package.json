@@ -8,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "uglify-js": "^3.12.1",
     "uglifycss": "0.0.29"
   }
 }
