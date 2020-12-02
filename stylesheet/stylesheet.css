@@ -457,14 +457,12 @@ header {
     vertical-align: middle;
 }
 
-
 .nav-menu .toggler-block button .icon {
     display: block;
     width: 40px;
     height: 5px;
     background: var(--light-secondary);
     transform: translateY(-10px);
-
 }
 
 .nav-menu .toggler-block button .icon::before {
@@ -505,7 +503,6 @@ header {
         display: none;
     }
 }
-
 
 .nav-menu .menu-block {
     display: none;
@@ -2037,7 +2034,7 @@ header {
     text-align: center;
     color: var(--ligth-dark);
     font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -2075,7 +2072,7 @@ header {
     padding: 0;
     margin: 0;
     flex-grow: 1;
-    flex-basis: 25%;
+    /* flex-basis: 25%; */
 }
 
 @media (max-width: 834px) {
@@ -2083,7 +2080,7 @@ header {
     #product-compare .category-block ul li,
     #product-search .category-block ul li,
     #product-manufacturer .category-block ul li {
-        flex-basis: 33%;
+        /* flex-basis: 33%; */
     }
 }
 
@@ -2092,21 +2089,13 @@ header {
 #product-search .category-block ul a,
 #product-manufacturer .category-block ul a {
     display: block;
-    padding: 10px;
+    padding: 13px;
     text-align: center;
-    border: 1px solid var(--light-secondary);
+    /* border: 1px solid var(--light-secondary); */
     color: var(--dark-third);
+    background: var(--light-secondary);
     font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    #product-category .category-block ul a,
-    #product-compare .category-block ul a,
-    #product-search .category-block ul a,
-    #product-manufacturer .category-block ul a {
-        padding: 20px;
-        text-align: left;
-    }
+    margin: 2px;
 }
 
 #product-category .category-block ul a:hover,
@@ -2115,8 +2104,8 @@ header {
 #product-manufacturer .category-block ul a:hover {
     text-decoration: none;
     color: var(--secondary-color);
-    box-shadow: 0 0 15px lightgrey;
-    transition: 0.5s;
+    box-shadow: 0 0 10px #aaa;
+    transition: 0.3s;
 }
 
 #product-category .search-form-block,
@@ -3458,7 +3447,7 @@ header {
 .module-block .blog-category #children-cats,
 .module-block .account-list #children-cats,
 .module-block .info-list #children-cats {
-    padding-left: 25px;
+    padding-left: 35px;
 }
 
 .module-block .category-list .active,
@@ -4508,7 +4497,6 @@ footer .footer-block {
     /* padding: 0;
     margin: 0; */
 }
-
 
 footer .footer-block .col-footer {
     /* flex-basis: 25%; */
