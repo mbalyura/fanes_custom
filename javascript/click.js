@@ -1,24 +1,26 @@
 //categories dropdown menu
 $(".toggler-block ").hover(
-	function () {
-		if ($(".menu-block").css("display") == "none") {
-			$(".menu-block").slideToggle();
+	function () { // mouse on toggler
+		if ($(".menu-block").css("display") === "none" ) { // open menu if already not open
+			$(".menu-block").slideToggle({ duration: 250, queue: false });
 		}
 	},
-	function () {
-		if ($(".menu-block").css("display") !== "none" && !$(".menu-block").is(":hover")) {
-			//console.log('hide!');
-			$(".menu-block").slideToggle();
+	function () { // mouse leave toggler
+		if ($(".menu-block").css("display") !== "none" && !$(".menu-block").is(":hover")) { // close menu if opened and not hovered
+			$(".menu-block").slideToggle({ duration: 250, queue: false });
 		}
 	}
 );
 
-$(".menu-block").mouseleave(function () {
-	$(".menu-block").slideToggle();
+$(".menu-block").mouseleave(function () { //mouse leave menu
+	if (!$(".toggler-block").is(":hover")) { // close menu if toggler not hovered
+		$(".menu-block").slideToggle({ duration: 250, queue: false });
+	}
 });
 
 $(".toggler-block").click(function () {
 	$(".icon").toggleClass("icons");
+	$(".menu-block").slideToggle({ duration: 250, queue: false });
 });
 
 $("#setting-dropdown").tooltip();
