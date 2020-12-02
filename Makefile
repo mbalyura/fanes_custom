@@ -13,7 +13,16 @@ local:
 	make build
 	rm -rf /opt/lampp/htdocs/site/catalog/view/theme/fanes/template
 	rm -rf /opt/lampp/htdocs/site/catalog/view/theme/fanes/stylesheet
-	rm -rf /opt/lampp/htdocs/site/catalog/view/theme/fanes/javascript/click.min.js`
+	rm -rf /opt/lampp/htdocs/site/catalog/view/theme/fanes/javascript/click.min.js
 	cp -r dist/template /opt/lampp/htdocs/site/catalog/view/theme/fanes/template
 	cp -r dist/stylesheet /opt/lampp/htdocs/site/catalog/view/theme/fanes/stylesheet
 	cp -r dist/javascript/click.min.js /opt/lampp/htdocs/site/catalog/view/theme/fanes/javascript/click.min.js
+
+localwin:
+	make build
+	rm -rf D:\Temp\Xampp\htdocs\site_oc\catalog\view\theme\fanes\template
+	rm -rf D:\Temp\Xampp\htdocs\site_oc\catalog\view\theme\fanes\stylesheet
+	rm -rf D:\Temp\Xampp\htdocs\site_oc\catalog\view\theme\fanes\javascript/click.min.js
+	cp -r dist/template D:\Temp\Xampp\htdocs\site_oc\catalog\view\theme\fanes\template
+	cp -r dist/stylesheet D:\Temp\Xampp\htdocs\site_oc\catalog\view\theme\fanes\stylesheet
+	cp -r dist/javascript/click.min.js D:\Temp\Xampp\htdocs\site_oc\catalog\view\theme\fanes\javascript\click.min.js
