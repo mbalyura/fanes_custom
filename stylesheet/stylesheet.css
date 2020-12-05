@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:700&display=swap&subset=cyrillic,cyrillic-ext");
 
 /* adding variables */
+
 :root {
     --main-color: #D14600;
     --secondary-color: #40B600;
@@ -14,6 +15,8 @@
     --dark-third: #222830;
     --danger: crimson;
 }
+
+
 /* adding variables */
 
 body {
@@ -189,7 +192,7 @@ header {
     color: var(--light-main);
 }
 
-@media (max-width: 1300px) and (min-width: 1000px) {
+@media (max-width: 1300px) and (min-width: 700px) {
     .header-block .logo {
         margin-left: 25px;
     }
@@ -198,7 +201,7 @@ header {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .header-block .logo {
         margin-left: 15px;
     }
@@ -207,7 +210,16 @@ header {
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 640px) {
+    .header-block .logo {
+        margin-left: 7px;
+    }
+    .header-block .right-menu {
+        margin-right: 7px;
+    }
+}
+
+@media (max-width: 1024px) {
     .header-block .contact-block {
         display: none;
     }
@@ -584,6 +596,12 @@ header {
     padding-left: 15px;
 }
 
+@media (max-width: 1024px) {
+    .nav-menu .menu-block .menu .dropdown .dropdown-menu a {
+        padding-left: 30px;
+    }
+}
+
 .nav-menu .menu-block .menu a {
     display: block;
     padding: 20px;
@@ -674,7 +692,7 @@ header {
 @media (max-width: 1024px) {
     .nav-menu .right-l #blog-drop>a::after,
     .nav-menu .right-l #infodrop>a::after {
-        display: none;
+        /* display: none; */
     }
 }
 
