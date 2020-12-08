@@ -525,6 +525,7 @@ header {
     padding: 0;
     margin: 0;
     z-index: 999;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, .175);
 }
 
 @media (max-width: 1024px) {
@@ -562,6 +563,10 @@ header {
     color: var(--light-main);
 }
 
+.nav-menu .menu-block .menu .open>a {
+    background: var(--dark-main);
+}
+
 @media (max-width: 1024px) {
     .nav-menu .menu-block .menu .dropdown>a::after {
         content: "";
@@ -581,6 +586,7 @@ header {
     left: 100%;
     box-shadow: none;
     overflow-y: auto;
+    box-shadow: 6px 6px 12px -6px rgba(0, 0, 0, .175);
 }
 
 @media (max-width: 1024px) {
