@@ -1,0 +1,102 @@
+:root {
+    --main-color: #D14600;
+    --secondary-color: #40B600;
+    --light-main: white;
+    --light-secondary: #eee;
+    --light-third: #fafafa;
+    --ligth-dark: #424242;
+    --dropdown-dark: #444;
+    --dark-main: #222222;
+    --dark-secondary: #333333;
+    --dark-third: #222830;
+    --danger: crimson;
+}
+
+.nav-menu {
+    background: var(--ligth-dark);
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-menu .toggler-block {
+    background: var(--dark-main);
+    flex-basis: 25%;
+    text-align: center;
+    padding: 0;
+    line-height: 65px;
+    margin: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.nav-menu .toggler-block:hover {
+    background: var(--secondary-color);
+    transition: 0.5s;
+}
+
+.nav-menu .toggler-block:hover>button>.icon::before,
+.nav-menu .toggler-block:hover>button>.icon::after {
+    width: 40px;
+    transition: 0.5s;
+}
+
+.nav-menu .toggler-block button {
+    display: inline-block;
+    background: none;
+    border: 0;
+    margin-right: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+
+.nav-menu .toggler-block button .icon {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: var(--light-secondary);
+    transform: translateY(-10px);
+
+}
+
+.nav-menu .toggler-block button .icon::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: var(--light-secondary);
+    transform: translateY(10px);
+}
+
+.nav-menu .toggler-block button .icon::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    background: var(--light-secondary);
+    transform: translateY(15px);
+}
+
+.nav-menu .toggler-block .text-category {
+    color: var(--light-main);
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .nav-menu .toggler-block {
+        flex-basis: 100px;
+    }
+    .nav-menu .toggler-block button {
+        /* width: 50px; */
+        /* padding-left: 0; */
+        padding-right: 0;
+    }
+    .nav-menu .toggler-block .text-category {
+        display: none;
+    }
+}
